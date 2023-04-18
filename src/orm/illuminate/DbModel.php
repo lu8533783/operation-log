@@ -16,6 +16,11 @@ class DbModel extends Model
 
     /** @var Query $query */
     private $query;
+        
+    /**
+     * 不生成该表日志
+     */
+    public bool $doNotRecordLog = true;
 
     public function setQuery(Query $query)
     {
